@@ -2,12 +2,29 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-
+import Footer from '../components/Footer'
+import HeadlineCards from '../components/HeadlineCards'
 import Head from 'next/head'
+import type { NextPage } from 'next'
+import styles from '../styles/Home.module.css'
+import { useColorMode } from '@chakra-ui/color-mode'
+import React from 'react'
+import { Heading } from '@chakra-ui/layout'
+import {
+  MoonIcon,
+  SunIcon
+} from '@chakra-ui/icons';
+import { IconButton } from '@chakra-ui/button'
+import { Switch } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+
+const Home: NextPage = () => {
+
+  // hook which help us to toggle the color modes
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <>
       <Head>
@@ -18,6 +35,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <Footer />
     </>
   )
 }
+
+export default Home
+

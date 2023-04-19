@@ -1,14 +1,23 @@
-import React, { Component , useState } from 'react';
+import React, { Component, useState } from 'react';
 import Link from 'next/link';
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import { ArrowForwardIcon, HamburgerIcon } from '@chakra-ui/icons'
-
-
+import { IconButton } from '@chakra-ui/button'
+import { Switch } from '@chakra-ui/react'
+import { Heading } from '@chakra-ui/layout'
+import {
+    MoonIcon,
+    SunIcon
+} from '@chakra-ui/icons';
+import { useColorMode } from '@chakra-ui/color-mode'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+    // hook which help us to toggle the color modes
+    const { colorMode, toggleColorMode } = useColorMode()
+
     return (
-        <div className='dark:bg-slate-800 dark:text-white border-b-4 relative border-stone-200'>
+        <div className='dark:bg-slate-800 dark:text-white border-b-4  relative border-stone-200'>
             <div className=' max-w-[1000px] mx-auto flex justify-between items-center p-4 '>
                 <div >
                     <div onClick={() => setNav(!nav)} className=' text-white cursor-pointer'>
@@ -16,6 +25,7 @@ const Navbar = () => {
                     </div>
 
                 </div>
+
                 <h1 className='font-Prompt font-medium  text-2xl'>
                     YaJok Group
                 </h1>
@@ -46,7 +56,6 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

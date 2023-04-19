@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <div className=' max-w-[1250px] max-h-[100px]  mx-auto p-4' >
-            <div className=' relative flex justify-between items-center '>
+        <div className=' max-w-[1250px] mx-auto p-4' >
+            <div className='  flex justify-between items-center '>
                 <div >
                     <h1 className=' font-Prompt font-bold text-7xl'>
                         YaJok Group
@@ -14,9 +14,7 @@ const Hero = () => {
                         Rpg Fantasy Open World Game Development Team
                     </span>
                 </div>
-
-
-                <Image src={Logo} alt="Logo" width={400} height={400} />
+                <Image className=' dark:bg-white ' src={Logo} alt="Logo" width={400} height={400} />
             </div>
         </div>
     )
