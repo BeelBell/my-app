@@ -52,7 +52,6 @@ const Navbar = () => {
                             Contact Now
                         </Button>
                     </Link>
-
                 </div>
             </div>
         </div>
