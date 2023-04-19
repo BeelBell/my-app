@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { Button, ButtonGroup } from '@chakra-ui/react'
-import {ArrowForwardIcon} from '@chakra-ui/icons'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 
 const Navbar = () => {
@@ -29,13 +29,15 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div>
-                <Button  rightIcon={<ArrowForwardIcon />}  colorScheme='teal' variant='outline'>
-                    Contact Now
-                </Button>
+                    <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            Contact Now
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </div>
-        
+
     )
 }
 
