@@ -31,17 +31,17 @@ const Navbar = () => {
                 </h1>
                 <ul className=' font-Prompt font-bold flex '>
                     <li className='px-5'>
-                        <Link href="/" >
+                        <Link href="/" > 
                             <li>Home</li>
                         </Link>
                     </li>
                     <li className='px-5'>
-                        <Link href="/" >
+                        <Link href="/Ourteam" > 
                             <li>Our Team</li>
                         </Link>
                     </li>
                     <li className='px-5'>
-                        <Link href="/" >
+                        <Link href="/Ourgames" >
                             <li>Our Games</li>
                         </Link>
                     </li>

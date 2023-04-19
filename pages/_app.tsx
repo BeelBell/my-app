@@ -2,15 +2,15 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { ThemeProvider } from 'next-themes'
-import theme from '../theme' 
+import theme from '../theme'
+import NextNProgress from 'nextjs-progressbar';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-    <Component {...pageProps} />
-  </ChakraProvider>
-  
+      <NextNProgress />
+      <Component {...pageProps} />
+    </ChakraProvider>
   )
 }
 
-export default MyApp;
