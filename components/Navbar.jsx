@@ -29,11 +29,12 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div>
-                    <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-                        <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
                             Contact Now
-                        </Link>
-                    </Button>
+                        </Button>
+                    </Link>
+
                 </div>
             </div>
         </div>
