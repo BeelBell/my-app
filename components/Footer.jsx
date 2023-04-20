@@ -7,7 +7,7 @@ const Footer = () => {
     return (
 
 
-        <footer class=" w-full h-16 border-t-4 bg-white border-stone-200 fixed left-0 bottom-0 flex justify-center items-center text-white text-2xl ">
+        <footer class=" w-full h-auto bg-white border-stone-200 fixed left-0 bottom-0 flex justify-center items-center text-white text-2xl ">
             <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="hover:underline">YaJok Group</a>. All Rights Reserved.
                 </span>

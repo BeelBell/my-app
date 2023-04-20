@@ -21,8 +21,8 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <div className=' bg-white border-b-4 relative border-stone-200'>
-            <div className=' max-w-[1000px] mx-auto flex justify-between items-center p-4 xl:max-w-7xl  '>
+        <div className=' bg-white relative border-stone-200'>
+            <div className=' max-w-[1600px] mx-auto flex justify-between items-center p-4 xl:max-w-7xl  '>
 
 
 
@@ -32,7 +32,7 @@ const Navbar = () => {
                     YaJok Group
                 </h1>
 
-                <nav className='lg:block hidden flex items-center'>
+                <nav className='lg:block hidden  items-center'>
                     <ul className=' font-Prompt font-bold flex '>
                         <li className='px-5'>
                             <Link href="/" >
@@ -67,12 +67,12 @@ const Navbar = () => {
 
 
                 {/*Side Menu */}
-                <div className={nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-slate-300 z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-slate-900 z-10 duration-300'}>
+                <div className={nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-slate-900 z-10 duration-300'}>
 
                     <AiOutlineClose
                         onClick={() => setNav(!nav)}
                         size={30}
-                        className=' text-white absolute right-4 top-4 cursor-pointer'
+                        className=' text-slate-700 absolute right-4 top-4 cursor-pointer'
                     />
 
                     <nav>
