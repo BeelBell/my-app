@@ -23,6 +23,7 @@ const OurteamDiv = () => {
 
     return (
         <div className='max-w-[1250px] mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
+            
             <Breadcrumb>
                 <BreadcrumbItem>
                     <BreadcrumbLink href='/'>Home</BreadcrumbLink>
