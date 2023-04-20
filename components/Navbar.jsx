@@ -17,7 +17,7 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <div className='dark:bg-slate-800 dark:text-white border-b-4  relative border-stone-200'>
+        <div className='dark:bg-slate-800 bg-white dark:text-white border-b-4  relative border-stone-200'>
             <div className=' max-w-[1000px] mx-auto flex justify-between items-center p-4 '>
                 <div >
                     <div onClick={() => setNav(!nav)} className=' text-white cursor-pointer'>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div>
-                    <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <Link href="https://discord.gg/D3g9H3c3j6">
                         <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
                             Contact Now
                         </Button>
