@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import CardProject from '../components/CardProject'
+import ProjectCount from '../components/ProjectCount'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Head from 'next/head'
@@ -15,6 +16,7 @@ import {
   SunIcon
 } from '@chakra-ui/icons';
 import { IconButton } from '@chakra-ui/button'
+import { Divider } from '@chakra-ui/react'
 import { Switch } from '@chakra-ui/react'
 import { useState, useEffect } from 'react';
 
@@ -38,7 +40,9 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
+      <ProjectCount />
       <CardProject />
+
       <Footer />
     </>
   )

@@ -54,14 +54,13 @@ function CardProject() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
 
-                            
+
                             {data.map(proj => (
 
-                                <a  key={proj.id}
+                                <a key={proj.id}
                                     className="relative justify-center flex items-center w-full md:w-auto pb-[56.25%] bg-cover bg-center text-white rounded-lg border-solid border-2 border-gray-200 transition hover:scale-[102%]"
                                     style={{
-                                        backgroundImage:
-                                            'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("{proj.image}")',
+                                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("${proj.image}")`,
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center'
                                     }}
@@ -75,7 +74,7 @@ function CardProject() {
                                     <div className=" text-white HeadlineCards absolute left-4 bottom-6 flex-inline">
 
                                         <p className="text-sm">Name: {proj.name}</p>
-                                        <p className="text-sm">Made By : {proj.madeby}</p>
+
                                     </div>
                                 </a>
                             ))}

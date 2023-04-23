@@ -23,7 +23,7 @@ const OurteamDiv = () => {
 
     return (
         <div className='max-w-[1250px] mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
-            
+
             <Breadcrumb>
                 <BreadcrumbItem>
                     <BreadcrumbLink href='/'>Home</BreadcrumbLink>
@@ -40,7 +40,7 @@ const OurteamDiv = () => {
                         <h5 className="text-xl font-bold leading-none text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 dark:text-white">YaJok Group Team</h5>
                     </div>
                     <div className="flow-root">
-                        
+
                         <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
 
                             {/*Crads 1*/}
@@ -54,9 +54,12 @@ const OurteamDiv = () => {
                                         <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
                                             BeelBellX
                                         </p>
-                                        <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                            Game Designer
-                                        </p>
+                                        <Tooltip label="Game Designer , Web Developer , Frontend Developer" aria-label='A tooltip'>
+                                            <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                Game Designer , Web Developer , Frontend Developer
+                                            </p>
+                                        </Tooltip>
+
                                     </div>
                                     <div className="px-1 inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                                         <Link className='' href="https://www.facebook.com/XverNightAkaBeelBellX/">
