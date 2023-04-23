@@ -35,30 +35,30 @@ const OurteamDiv = () => {
 
             </Breadcrumb>
             <div className='items-center justify-center text-left flex max-w-[1640px] mx-auto p-4 py-12 '>
-                <div class="w-full max-w-md p-4 bg-white border items-center border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <div class="flex items-center justify-between mb-4">
-                        <h5 class="text-xl font-bold leading-none text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 dark:text-white">YaJok Group Team</h5>
+                <div className="w-full max-w-md p-4 bg-white border items-center border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <div className="flex items-center justify-between mb-4">
+                        <h5 className="text-xl font-bold leading-none text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 dark:text-white">YaJok Group Team</h5>
                     </div>
-                    <div class="flow-root">
+                    <div className="flow-root">
                         
-                        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
 
                             {/*Crads 1*/}
 
-                            <li class="py-3 sm:py-4">
-                                <div class=" flex items-center space-x-4">
-                                    <div class="flex-shrink-0">
+                            <li className="py-3 sm:py-4">
+                                <div className=" flex items-center space-x-4">
+                                    <div className="flex-shrink-0">
                                         <Image className=' rounded-full' src={Hutao} alt="Hutao" width={64} height={64} />
                                     </div>
-                                    <div class="flex-1 min-w-0">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <div className="flex-1 min-w-0">
+                                        <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
                                             BeelBellX
                                         </p>
-                                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                                             Game Designer
                                         </p>
                                     </div>
-                                    <div class="px-1 inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <div className="px-1 inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                                         <Link className='' href="https://www.facebook.com/XverNightAkaBeelBellX/">
                                             <Button >
                                                 <BsFacebook size={20} />
@@ -75,23 +75,23 @@ const OurteamDiv = () => {
 
                             {/*Crads 2*/}
 
-                            <li class="py-3 sm:py-4">
-                                <div class="  flex items-center space-x-4">
-                                    <div class="flex-shrink-0">
+                            <li className="py-3 sm:py-4">
+                                <div className="  flex items-center space-x-4">
+                                    <div className="flex-shrink-0">
                                         <Image className=' rounded-full ' src={Lumine} alt="Lumine" width={64} height={64} />
                                     </div>
-                                    <div class="flex-1 min-w-0">
-                                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <div className="flex-1 min-w-0">
+                                        <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
                                             Miu
                                         </p>
                                         <Tooltip label="Scripter , Animator , VFX / GFX , Gui , Modeler" aria-label='A tooltip'>
-                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                            <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                                                 Scripter , Animator , VFX / GFX , Gui , Modeler
                                             </p>
                                         </Tooltip>
 
                                     </div>
-                                    <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                                         <Link className='' href="https://www.facebook.com/profile.php?id=100071235520280">
                                             <Button >
                                                 <BsFacebook size={20} />
