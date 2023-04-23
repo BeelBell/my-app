@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
+import CardProject from '../components/CardProject'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
-import HeadlineCards from '../components/HeadlineCards'
 import Head from 'next/head'
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
@@ -16,8 +16,11 @@ import {
 } from '@chakra-ui/icons';
 import { IconButton } from '@chakra-ui/button'
 import { Switch } from '@chakra-ui/react'
+import { useState, useEffect } from 'react';
+
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 
 const Home: NextPage = () => {
@@ -35,6 +38,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
+      <CardProject />
       <Footer />
     </>
   )

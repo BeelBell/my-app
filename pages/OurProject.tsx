@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import OurProjectDiv from '../components/OurProjectDiv'
 import HeadlineCards from '../components/HeadlineCards'
 import Head from 'next/head'
 import type { NextPage } from 'next'
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="https://cdn.discordapp.com/attachments/1063724608894812191/1072117727642267738/sticker_9.png" />
       </Head>
       <Navbar />
-      <Hero />
+      <OurProjectDiv />
       <Footer />
     </>
   )

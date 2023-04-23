@@ -21,7 +21,7 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <div className=' bg-white relative border-stone-200'>
+        <div className=' bg-white relative border-stone-200 font-Prompt'>
             <div className=' max-w-[1600px] mx-auto flex justify-between items-center p-4 xl:max-w-7xl  '>
 
 
@@ -45,8 +45,8 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='px-5'>
-                            <Link href="/Ourgames" >
-                                <li>Our Games</li>
+                            <Link href="/OurProject" >
+                                <li>Our Project</li>
                             </Link>
                         </li>
                     </ul>
@@ -78,17 +78,12 @@ const Navbar = () => {
                     <nav>
                         <ul className=' flex flex-col p-4 text-slate-700  '>
                             <Link href="/" >
-                                <li className=' text-xl py-4 flex hover:text-white'><AiOutlineHome size={25} className='mr-4' />Home</li>
+                                <li className=' text-xl py-4 flex hover:text-white'>Home</li>
                             </Link>
                             <Link href="/Ourteam" >
-                                 <li className=' text-xl py-4 flex hover:text-white'><BiCategoryAlt size={25} className='mr-4' />Our Team</li>
+                                 <li className=' text-xl py-4 flex hover:text-white'>Our Team</li>
                             </Link>
-                            <Link href="/Wallet">
-                                <li className=' text-xl py-4 flex hover:text-white'><BsWallet2 size={25} className='mr-4' />Our Games</li>
-                            </Link>
-                            <Link href="/TopUp">
-                                <li className=' text-xl py-4 flex hover:text-white'><BsCurrencyDollar size={25} className='mr-4' />TopUp</li>
-                            </Link>
+                            
                             <div className='flex items-center justify-center'></div>
                         </ul>
                     </nav>
