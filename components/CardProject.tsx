@@ -57,7 +57,7 @@ function CardProject() {
                             
                             {data.map(proj => (
 
-                                <a key={proj.id}
+                                <a  key={proj.id}
                                     className="relative justify-center flex items-center w-full md:w-auto pb-[56.25%] bg-cover bg-center text-white rounded-lg border-solid border-2 border-gray-200 transition hover:scale-[102%]"
                                     style={{
                                         backgroundImage:
