@@ -1,39 +1,40 @@
 import React, { Component, useState } from 'react';
 import Link from 'next/link';
 import { Button, ButtonGroup } from '@chakra-ui/react'
+import { useTheme } from 'next-themes';
 import { ArrowForwardIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose, AiOutlineHome } from "react-icons/ai";
 import { BiCart, BiCategoryAlt } from "react-icons/bi";
-import { BsWallet2, BsCurrencyDollar } from "react-icons/bs"
+import { BsWallet2, BsCurrencyDollar , BsSunFill } from "react-icons/bs"
 import { IconButton } from '@chakra-ui/button'
 import { Switch } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/layout'
+import UseColorMode from './UseColorMode'
 import {
     MoonIcon,
     SunIcon
 } from '@chakra-ui/icons';
-import { useColorMode } from '@chakra-ui/color-mode'
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     // hook which help us to toggle the color modes
 
-    const { colorMode, toggleColorMode } = useColorMode()
-
     return (
-        <div className=' bg-white relative border-stone-200 font-Prompt'>
+        <div className=' bg-white dark:bg-gray-800 relative border-stone-200 font-Prompt'>
             <div className=' max-w-[1600px] mx-auto flex justify-between items-center p-4 xl:max-w-7xl  '>
 
 
 
                 {/* Pc Menu */}
                 <AiOutlineMenu className=' lg:hidden h-6 w-6 cursor-pointer' onClick={() => setNav(!nav)} />
-                <h1 className='font-Prompt font-medium  text-2xl'>
+                <h1 className='font-Prompt font-medium  text-slate-900  dark:text-white text-2xl'>
                     YaJok Group
                 </h1>
+                
 
-                <nav className='lg:block hidden  items-center'>
-                    <ul className=' font-Prompt font-bold flex '>
+                <nav className='lg:block hidden items-center'>
+                    <ul className=' font-Prompt dark:text-gray-200 font-bold flex '>
                         <li className='px-5'>
                             <Link href="/" >
                                 <li>Home</li>
@@ -48,6 +49,9 @@ const Navbar = () => {
                             <Link href="/OurProject" >
                                 <li>Our Project</li>
                             </Link>
+                        </li>
+                        <li className='px-5'>
+                        <UseColorMode />
                         </li>
                     </ul>
                 </nav>
@@ -83,7 +87,9 @@ const Navbar = () => {
                             <Link href="/Ourteam" >
                                  <li className=' text-xl py-4 flex hover:text-white'>Our Team</li>
                             </Link>
-                            
+                            <Link href="/OurProject" >
+                                 <li className=' text-xl py-4 flex hover:text-white'>Our Project</li>
+                            </Link>
                             <div className='flex items-center justify-center'></div>
                         </ul>
                     </nav>

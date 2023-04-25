@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Navbar.jsx", "components/Loading.jsx", "components/Footer.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Navbar.jsx", "components/Loading.jsx", "components/Footer.jsx", "components/useColorMode.jsx"],
   "exclude": ["node_modules"]
 }

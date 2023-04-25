@@ -8,7 +8,6 @@ import Footer from '../components/Footer'
 import Head from 'next/head'
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
-import { useColorMode } from '@chakra-ui/color-mode'
 import React from 'react'
 import { Heading } from '@chakra-ui/layout'
 import {
@@ -20,7 +19,6 @@ import { Divider } from '@chakra-ui/react'
 import { Switch } from '@chakra-ui/react'
 import { useState, useEffect } from 'react';
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -28,7 +26,6 @@ const inter = Inter({ subsets: ['latin'] })
 const Home: NextPage = () => {
 
   // hook which help us to toggle the color modes
-  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <>
@@ -40,9 +37,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
-      <ProjectCount />
       <CardProject />
-
       <Footer />
     </>
   )

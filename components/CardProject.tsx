@@ -4,7 +4,8 @@ import Image from 'next/image'
 import axios from 'axios'
 import { Badge, background } from '@chakra-ui/react'
 import Loading from './Loading'
-
+import { Card, CardHeader, CardBody, CardFooter, ButtonGroup, Text, Divider, Button, Stack, Heading } from '@chakra-ui/react'
+import { root } from 'postcss'
 
 interface Proj {
     id: number;
@@ -41,9 +42,9 @@ function CardProject() {
         <div className='max-w-[1250px] mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
 
             <div className='items-center justify-center text-left flex max-w-[1640px] mx-auto p-4 py-12 '>
-                <div className="w-full  p-4 bg-white  items-center sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full  p-4 bg-white  items-center sm:p-8  dark:bg-gray-900 dark:border-gray-700">
                     <div className="flex items-center mb-4">
-                        <h1 className='text-xl font-medium text-left text-transparent md:text-3xl bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>
+                        <h1 className='text-xl dark:text-white font-medium text-left md:text-3xl'>
                             ProJect
                         </h1>
                     </div>
@@ -54,29 +55,30 @@ function CardProject() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
 
-
                             {data.map(proj => (
+                                <div key={proj.id} className="max-w-sm bg-white border border-gray-200  rounded-lg  shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <a key={proj.id}
+                                        className="relative justify-center flex items-center w-full md:w-auto bg-cover bg-center text-white rounded-lg border-solid border-2 border-gray-200 transition">
+                                            <img className='rounded-md	' src={proj.image} alt={proj.image} />
+                                        
+                                        <div className="HeadlineCards absolute left-4 top-2 flex-inline">
+                                            <Badge variant='solid' colorScheme='green'>
+                                                {proj.category}
+                                            </Badge>
 
-                                <a key={proj.id}
-                                    className="relative justify-center flex items-center w-full md:w-auto pb-[56.25%] bg-cover bg-center text-white rounded-lg border-solid border-2 border-gray-200 transition hover:scale-[102%]"
-                                    style={{
-                                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("${proj.image}")`,
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center'
-                                    }}
-                                >
-                                    <div className="HeadlineCards absolute left-4 top-6 flex-inline">
-                                        <Badge variant='solid' colorScheme='green'>
-                                            {proj.category}
-                                        </Badge>
-
+                                        </div>
+                                    </a>
+                                    <div className="p-5">
+                                        <a href="#">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{proj.name}</h5>
+                                        </a>
+                                        <p className="mb-3 font-normal text-gray-800 dark:text-gray-400">Made By : {proj.madeby} <br/> Date : {proj.date} </p>
+                                        <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Read more
+                                            <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        </a>
                                     </div>
-                                    <div className=" text-white HeadlineCards absolute left-4 bottom-6 flex-inline">
-
-                                        <p className="text-sm">Name: {proj.name}</p>
-
-                                    </div>
-                                </a>
+                                </div>
                             ))}
                         </div>
                     </div>
