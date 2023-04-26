@@ -4,8 +4,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react'
 import { useTheme } from 'next-themes';
 import { ArrowForwardIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose, AiOutlineHome } from "react-icons/ai";
-import { BiCart, BiCategoryAlt } from "react-icons/bi";
-import { BsWallet2, BsCurrencyDollar , BsSunFill } from "react-icons/bs"
+import { BiCart, BiMenuAltLeft } from "react-icons/bi";
+import { BsWallet2, BsCurrencyDollar, BsSunFill } from "react-icons/bs"
 import { IconButton } from '@chakra-ui/button'
 import { Switch } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/layout'
@@ -27,11 +27,39 @@ const Navbar = () => {
 
 
                 {/* Pc Menu */}
-                <AiOutlineMenu className=' lg:hidden h-6 w-6 cursor-pointer' onClick={() => setNav(!nav)} />
-                <h1 className='font-Prompt font-medium  text-slate-900  dark:text-white text-2xl'>
+                {/* The button to open modal */}
+                <label htmlFor="my-modal-4" > <BiMenuAltLeft className=' dark:text-white lg:hidden h-6 w-6 cursor-pointer' onClick={() => setNav(!nav)} /></label>
+
+                {/* Put this part before </body> tag */}
+                <input type="checkbox" id="my-modal-4" className="modal-toggle" />
+                <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                    <label className="dark:bg-slate-800  dark:text-gray-200 modal-box relative" htmlFor="">
+                    <ul className=' font-Prompt text-xs dark:text-gray-200 font-bold justify-center flex items-center text-justify'>
+                        <li className='px-5'>
+                            <Link href="/" >
+                                <li>Home</li>
+                            </Link>
+                        </li>
+                        <li className='px-5'>
+                            <Link href="/Ourteam" >
+                                <li>Our Team</li>
+                            </Link>
+                        </li>
+                        <li className='px-5'>
+                            <Link href="/OurProject" >
+                                <li>Our Project</li>
+                            </Link>
+                        </li>
+                        <li className='px-5'>
+                            <UseColorMode />
+                        </li>
+                    </ul>
+                    </label>
+                </label>
+                <h1 className='font-Prompt font-medium  dark:text-white text-slate-900 text-2xl'>
                     YaJok Group
                 </h1>
-                
+
 
                 <nav className='lg:block hidden items-center'>
                     <ul className=' font-Prompt dark:text-gray-200 font-bold flex '>
@@ -51,7 +79,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='px-5'>
-                        <UseColorMode />
+                            <UseColorMode />
                         </li>
                     </ul>
                 </nav>
@@ -66,36 +94,7 @@ const Navbar = () => {
 
 
 
-                {/* Mobie Menu */}
-                {nav ? <div className='bg-black/50 fixed w-full h-screen z-10 top-0 left-0'></div> : ''}
-
-
-                {/*Side Menu */}
-                <div className={nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-slate-900 z-10 duration-300'}>
-
-                    <AiOutlineClose
-                        onClick={() => setNav(!nav)}
-                        size={30}
-                        className=' text-slate-700 absolute right-4 top-4 cursor-pointer'
-                    />
-
-                    <nav>
-                        <ul className=' flex flex-col p-4 text-slate-700  '>
-                            <Link href="/" >
-                                <li className=' text-xl py-4 flex hover:text-white'>Home</li>
-                            </Link>
-                            <Link href="/Ourteam" >
-                                 <li className=' text-xl py-4 flex hover:text-white'>Our Team</li>
-                            </Link>
-                            <Link href="/OurProject" >
-                                 <li className=' text-xl py-4 flex hover:text-white'>Our Project</li>
-                            </Link>
-                            <div className='flex items-center justify-center'></div>
-                        </ul>
-                    </nav>
-
-                </div>
-                {/* Overlay */}
+                
 
             </div>
         </div>

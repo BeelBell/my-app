@@ -54,7 +54,7 @@ function OurProjectDiv() {
                 </BreadcrumbItem>
 
             </Breadcrumb>
-            <div className='max-w-[1250px] mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
+            <div className='max-w-[1250px] mx-auto p-4 py-12  min-h-screen items-center justify-center font-medium font-Prompt '>
 
                 <div className='items-center justify-center text-left flex max-w-[1640px] mx-auto p-4 '>
                     <div className="w-full  p-4 bg-white  items-center sm:p-8 dark:bg-gray-900 dark:border-gray-700">

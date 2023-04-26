@@ -23,7 +23,7 @@ const OurteamDiv = () => {
 
 
     return (
-        <div className='max-w-[1250px] mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
+        <div className='max-w-[1250px]  min-h-screen mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
 
             <Breadcrumb className='  dark:text-gray-200'>
                 <BreadcrumbItem>
@@ -36,7 +36,7 @@ const OurteamDiv = () => {
 
             </Breadcrumb>
             <div className='items-center justify-center text-left flex  mx-auto p-4 py-12 '>
-                <div className="w-full max-w-md p-4 bg-white border items-center border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-w-md p-4 bg-white border items-center border-gray-200 rounded-lg shadow sm:p-8  dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex items-center justify-between mb-4">
                         <h5 className="text-xl font-bold leading-none text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 dark:text-white">YaJok Group Team</h5>
                     </div>
