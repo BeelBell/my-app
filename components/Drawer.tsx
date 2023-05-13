@@ -20,7 +20,7 @@ const DrawerComponent = () => {
       <div className="lg:hidden">
         <HamburgerIcon  w={8} h={8} onClick={onOpen} />
 
-        <Drawer isOpen={isOpen} onClose={onClose} placement="Right">
+        <Drawer isOpen={isOpen} onClose={onClose} placement='right'>
           <DrawerOverlay>
             <DrawerContent>
               <DrawerCloseButton />
