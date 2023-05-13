@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1816.22 345">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: TwCenMT-Condensed, 'Tw Cen MT Condensed';
+        font-size: 327.88px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 265.91) scale(.93 1)"><tspan x="0" y="0">NOBLE</tspan><tspan class="cls-1" x="618.63" y="0">F</tspan><tspan class="cls-2" x="708.28" y="0" xml:space="preserve">ABLE  GAMES</tspan></text>
+  <polygon points="1194.55 163.05 1158.31 201.94 1122.08 163.05 1158.31 124.17 1194.55 163.05"/>
+  <rect x="5.87" y="280.14" width="1092.45" height="14.76"/>
+</svg>

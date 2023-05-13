@@ -3,6 +3,7 @@ module.exports = {
   darkMode: 'class',
   
   content: [
+    "./node_modules/flowbite-react/**/*.js",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -28,5 +29,8 @@ module.exports = {
     Prompt: ["Prompt" , " sans-serif"],
   },
 
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui")
+    
+  ],
 }

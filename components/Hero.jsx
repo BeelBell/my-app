@@ -2,8 +2,10 @@ import React, { Component, useState } from 'react';
 import Link from 'next/link';
 import Hutao from '../public/Hutao.png'
 import Lumine from '../public/Lumine.jpg'
+import NobleFable from '../public/NOBLEFABLEGAMES.svg'
 import { Tooltip } from '@chakra-ui/react'
 import facebook from '../public/facebook.svg'
+import Logo from '../public/Logo.svg'
 import Image from 'next/image';
 import { BsFacebook, BsTwitter } from 'react-icons/bs'
 import { Button, ButtonGroup } from '@chakra-ui/react'
@@ -23,34 +25,25 @@ const OurteamDiv = () => {
 
     return (
         <>
-            <div className=' relative max-w-full mx-auto p-4 py-12 items-center justify-center font-medium font-Prompt '>
-
-                <div className='items-center justify-center text-left flex max-w-[1640px] mx-auto p-4 py-12 '>
-                    <div class="w-full p-4 bg-white  dark:bg-gray-900 items-center sm:p-8">
-                        <div class="flex items-center justify-center mb-4">
-                            <h1 className='text-4xl font-medium text-transparent md:text-8xl bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500'>
-                                YaJok Group
-                            </h1>
-
-                        </div>
-                        <div className='text-sm md:text-xl   dark:text-white   flex items-center justify-center mb-4'>
-                            <span>
-                                Rpg Fantasy Open World Game Development Team
-                            </span>
-                        </div>
-                        <div className='flex items-center justify-center mb-4'>
-                            <Link href="https://discord.gg/D3g9H3c3j6">
-                                <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-                                    Contact Now
-                                </Button>
-                            </Link>
-                        </div>
+            <section>
+                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+                    <div className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-smrounded-full">
+                        <Image src={Logo} alt='Logo' height={300} width={300} />
                     </div>
+                    <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                        Noble Fable
+                    </h1>
+                    <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">
+                        We are Rpg Fantasy Open World development team and in the future we will make Pixel Rpg Fantasy game as well.
+                    </p>
                 </div>
-            </div>
+            </section>
+
         </>
     )
 }
 
 export default OurteamDiv;
+
+
 
