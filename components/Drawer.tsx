@@ -7,10 +7,11 @@ import {
   DrawerBody,
   useDisclosure,
 } from "@chakra-ui/react";
-import { AiFillHome , AiFillFolder , AiOutlineTeam , } from 'react-icons/ai'
+import { AiFillHome , AiFillFolder , AiFillMeh , } from 'react-icons/ai'
 import { BsFillSendFill , BsFillPeopleFill } from 'react-icons/bs'
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import Link from "next/link";
 
 const DrawerComponent = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -32,7 +33,7 @@ const DrawerComponent = () => {
                   <ul className="space-y-2 font-medium">
                     <li>
                       <a
-                        href="#"
+                        href=""
                         className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                       >
                         <AiFillHome 
@@ -42,38 +43,14 @@ const DrawerComponent = () => {
                         <span className="ml-3">Home</span>
                       </a>
                       <a
-                        href="#"
+                        href="/About"
                         className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                       >
-                        <AiFillHome 
+                        <AiFillMeh 
                         className=" text-gray-500  hover:text-gray-900 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         size={25}
                         />
                         <span className="ml-3">About</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#projects"
-                        className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                      >
-                        <AiFillFolder 
-                        className=" text-gray-500  hover:text-gray-900 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                        size={25}
-                        />
-                        <span className="ml-3">Projects</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#team"
-                        className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-                      >
-                        <BsFillPeopleFill 
-                        className=" text-gray-500  hover:text-gray-900 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                        size={25}
-                        />
-                        <span className="ml-3">Team</span>
                       </a>
                     </li>
                     <li>

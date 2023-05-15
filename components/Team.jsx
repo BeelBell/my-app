@@ -1,41 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import Website1 from '../public/Website1.png'
-import Image from 'next/image'
-import axios from 'axios'
-import { Badge, background } from '@chakra-ui/react'
+import useSWR from 'swr'
 import Loading from './Loading'
-import { Card, CardHeader, CardBody, CardFooter, ButtonGroup, Text, Divider, Button, Stack, Heading } from '@chakra-ui/react'
-import { root } from 'postcss'
 
-import Popover from './PopoverComponent'
-import Link from 'next/link'
 
-interface person {
-    id: number;
-    name: string;
-    imageUrl: string;
-    role: string;
-
-}
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 function Ourteam() {
-    const [data, setData] = useState<person[]>([]);
-    const [isLoading, setLoading] = useState(true);
+    const URL = 'https://beelbell.github.io/noblefable.github.io/example.json'
+    const { data, error } = useSWR(URL, fetcher)
 
-    useEffect(() => {
-        setLoading(true)
-        fetch('https://beelbell.github.io/noblefable.github.io/example.json')
-            .then(response => response.json())
-            .then(data => {
-                data.sort((a: person, b: person) => b.id - a.id);
-                setData(data);
-                setLoading(false);
-            })
-            .catch(error => console.error(error));
-    }, [])
+    if (error) return <div>Failed to load</div>
+    if (!data) return <div><Loading /></div>
 
-    if (isLoading) return <Loading />
-    if (!data) return <p>No profile data</p>
+    const LoadPJ = []
+    for (const key in data) {
+        LoadPJ.push(data[key])
+    }
 
 
     return (

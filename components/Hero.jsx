@@ -26,7 +26,7 @@ const OurteamDiv = () => {
     return (
         <>
             <section>
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+                <div className="py-8 px-4 min-h-screen mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
                     <div className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-smrounded-full">
                         <Image src={Logo} alt='Logo' height={300} width={300} />
                     </div>

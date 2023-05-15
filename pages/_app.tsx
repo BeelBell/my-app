@@ -8,7 +8,7 @@ import NextNProgress from 'nextjs-progressbar';
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
-      <ThemeProvider enableSystem={true} attribute="class">
+      <ThemeProvider>
         <Component {...pageProps} />
       </ThemeProvider>
       <NextNProgress />

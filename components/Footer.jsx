@@ -17,10 +17,7 @@ const Footer = () => {
                         <Link className='mr-4 hover:underline md:mr-6' href="/">Home</Link>
                     </li>
                     <li>
-                        <Link className='mr-4 hover:underline md:mr-6' href="/Ourteam">Our Team</Link>
-                    </li>
-                    <li>
-                        <Link className='mr-4 hover:underline md:mr-6' href="/OurProject">Our Project</Link>
+                        <Link className='mr-4 hover:underline md:mr-6' href="/Ourteam">About</Link>
                     </li>
                     <li>
                         <Link className='mr-4 hover:underline md:mr-6' href="https://discord.gg/D3g9H3c3j6">Contact</Link>
