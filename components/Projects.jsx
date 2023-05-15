@@ -39,7 +39,7 @@ function Projects() {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3'>
                     {LoadPJ.map(data => (
-                        <div className="w-full max-w-sm bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                        <div key={data.id} className="w-full max-w-sm bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700">
 
                             <a>
                                 <img
